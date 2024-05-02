@@ -31,7 +31,6 @@ public class ProductService
 	{
 		List<ProductModel> productList=new ArrayList<ProductModel>();
 		productRepository.findAll().forEach(productList::add);
-		System.out.println("get all product");
 		return productList;
 		
 	}
