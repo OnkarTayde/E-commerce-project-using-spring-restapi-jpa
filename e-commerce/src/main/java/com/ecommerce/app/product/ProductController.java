@@ -20,6 +20,7 @@ public class ProductController
 	@PostMapping("/addProduct")
 	public ProductModel addProduct(@RequestBody ProductModel productModel)
 	{
+		System.out.println("product added");
 		return productService.InsertProduct(productModel);
 
 	}
