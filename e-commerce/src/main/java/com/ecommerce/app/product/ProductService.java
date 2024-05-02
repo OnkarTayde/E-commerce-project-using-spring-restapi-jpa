@@ -42,7 +42,7 @@ public class ProductService
 		List<ProductModel> productModels=productRepository.findAll();
 		List<BrandModel> brandModels=brandRepository.findAll();
 		ProductModel brandMd= new ProductModel();
-
+		System.out.println("product inserted");
 		for (BrandModel b:brandModels)
 		{
 			if (productModel.getBrandId()==b.getBrand_id() && productModel.getcategoryId()==b.getCategoryId())
